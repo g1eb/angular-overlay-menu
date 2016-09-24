@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="ExampleApp">
+<head>
+  <title>General purpose overlay menu for AngularJS</title>
+  <link rel="stylesheet" type="text/css" href="dist/overlay-menu.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body ng-controller="MainCtrl">
+
+  <overlay-menu items="menu" on-select="print(item)"></overlay-menu>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js" charset="utf-8"></script>
+  <script src="dist/overlay-menu.min.js"></script>
+
+  <script>
+    angular.module('ExampleApp', ['g1b.overlay-menu']).
+      controller('MainCtrl', function ($scope) {
+        $scope.menu = [{
+          id: 1,
+          name: 'item 1',
+        }, {
+          id: 2,
+          name: 'item 2',
+        }, {
+          id: 3,
+          name: 'item 3',
+        }];
+        $scope.print = function (item) {
+          console.log('selected item', item);
+        };
+      });
+  </script>
+</body>
+</html>

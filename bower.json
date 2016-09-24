@@ -1,0 +1,37 @@
+{
+  "name": "angular-overlay-menu",
+  "version": "0.0.1",
+  "authors": [
+    "Gleb <git@gleb.nl>"
+  ],
+  "description": "General purpose overlay menu, converted to an angular directive for your convenience.",
+  "main": [
+    "dist/overlay-menu.min.js",
+    "dist/overlay-menu.min.css"
+  ],
+  "moduleType": [],
+  "keywords": [
+    "angular",
+    "angularjs",
+    "directive",
+    "general",
+    "purpose",
+    "overlay",
+    "view",
+    "navigation",
+    "nav",
+    "menu"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/g1eb/angular-overlay-menu",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}
