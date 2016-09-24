@@ -8,11 +8,16 @@
       margin: 0;
       padding: 15px;
       box-sizing: border-box;
+      color: #333;
+      font-family: sans-serif;
     }
   </style>
 </head>
 <body ng-controller="MainCtrl">
 
+  <h1>To bring up menu</h1>
+  <h2>1. press &lt;Esc&gt;</h2>
+  <h2>2. press &amp; hold</h2>
   <overlay-menu items="menu" on-select="print(item)"></overlay-menu>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js" charset="utf-8"></script>
