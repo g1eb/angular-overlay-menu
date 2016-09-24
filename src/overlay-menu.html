@@ -1,2 +1,9 @@
 <div class="overlay-menu" ng-show="!!active">
+  <div class="overlay-menu--container">
+    <div class="overlay-menu--column" ng-repeat="item in items">
+      <div class="overlay-menu--row" ng-repeat="subitem in item">
+        <span ng-bind="subitem.name"></span>
+      </div>
+    </div>
+  </div>
 </div>
