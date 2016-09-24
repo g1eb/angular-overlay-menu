@@ -28,9 +28,9 @@
     angular.module('ExampleApp', ['g1b.overlay-menu']).
       controller('MainCtrl', function ($scope) {
         $scope.menu = [
-          [{id: 1, name: 'item 1'}, {id: 2, name: 'item 2'}, {id: 3, name: 'item 3'}],
-          [{id: 1, name: 'item 1'}, {id: 2, name: 'item 2'}, {id: 3, name: 'item 3'}],
-          [{id: 1, name: 'item 1'}, {id: 2, name: 'item 2'}, {id: 3, name: 'item 3'}],
+          {name: 'item 1', items: [{id: 1, name: 'subitem 1'}]},
+          {name: 'item 2', items: [{id: 1, name: 'subitem 1'}, {id: 2, name: 'subitem 2'}]},
+          {name: 'item 3', items: [{id: 1, name: 'subitem 1'}, {id: 2, name: 'subitem 2'}]},
         ];
         $scope.print = function (item) {
           console.log('selected item', item);
