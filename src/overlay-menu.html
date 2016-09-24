@@ -7,5 +7,12 @@
         <span ng-bind="item.name"></span>
       </div>
     </div>
+    <div class="overlay-menu--column" ng-if="!!selected.items">
+      <div class="overlay-menu--row"
+        ng-repeat="item in selected.items"
+        ng-click="select(item)">
+        <span ng-bind="item.name"></span>
+      </div>
+    </div>
   </div>
 </div>
