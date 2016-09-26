@@ -32,24 +32,29 @@
   justify-content: flex-start;
 }
 .overlay-menu .overlay-menu--column {
+  display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: space-around;
   max-width: 250px;
+  height: 75%;
+  padding-top: 150px;
+  overflow: scroll;
 }
 .overlay-menu .overlay-menu--row {
   display: flex;
-  flex: 1;
-  align-self: stretch;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  min-height: 50px;
   cursor: pointer;
-  height: 50px;
+  text-align: center;
   margin: 10px 5px;
-  background-color: rgba(255, 255, 255, 0.75);
   border: 1px solid #aaa;
+  opacity: 0.75;
+  background: whitesmoke;
   transition: background-color 0.25s ease-out;
 }
 .overlay-menu .overlay-menu--row:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
 }
