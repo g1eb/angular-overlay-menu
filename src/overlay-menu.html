@@ -10,6 +10,7 @@
     <div class="overlay-menu--column" ng-if="!!selected.items">
       <div class="overlay-menu--row"
         ng-repeat="item in selected.items"
+        ng-style="{'background-color': item.name}"
         ng-click="select(item)">
         <span ng-bind="item.name"></span>
       </div>
