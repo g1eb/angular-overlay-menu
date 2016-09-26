@@ -26,13 +26,196 @@
   <script>
     angular.module('ExampleApp', ['g1b.overlay-menu']).
       controller('MainCtrl', function ($scope) {
+        $scope.color = 'tomato';
         $scope.menu = [
-          {name: 'item 1', items: [{id: 1, name: 'subitem 1'}]},
-          {name: 'item 2', items: [{id: 1, name: 'subitem 1'}, {id: 2, name: 'subitem 2'}]},
-          {name: 'item 3', items: [{id: 1, name: 'subitem 1'}, {id: 2, name: 'subitem 2'}]},
+          {
+            name: 'red',
+            items: [
+              {id: 1, name: 'indianred'},
+              {id: 2, name: 'lightcoral'},
+              {id: 3, name: 'salmon'},
+              {id: 4, name: 'darksalmon'},
+              {id: 5, name: 'lightsalmon'},
+              {id: 6, name: 'crimson'},
+              {id: 7, name: 'red'},
+              {id: 8, name: 'firebrick'},
+              {id: 9, name: 'darkred'},
+            ]
+          }, {
+            name: 'pink',
+            items: [
+              {id: 1, name: 'pink'},
+              {id: 2, name: 'lightpink'},
+              {id: 3, name: 'hotpink'},
+              {id: 4, name: 'deeppink'},
+              {id: 5, name: 'mediumvioletred'},
+              {id: 6, name: 'palevioletred'},
+            ]
+          }, {
+            name: 'orange',
+            items: [
+              {id: 1, name: 'lightsalmon'},
+              {id: 2, name: 'coral'},
+              {id: 3, name: 'tomato'},
+              {id: 4, name: 'orangered'},
+              {id: 5, name: 'orangered'},
+              {id: 6, name: 'darkorange'},
+              {id: 7, name: 'orange'},
+            ]
+          }, {
+            name: 'yellow',
+            items: [
+              {id: 1, name: 'gold'},
+              {id: 2, name: 'yellow'},
+              {id: 3, name: 'lightyellow'},
+              {id: 4, name: 'lemonchiffon'},
+              {id: 5, name: 'lightgoldenrodyellow'},
+              {id: 6, name: 'papayawhip'},
+              {id: 7, name: 'moccasin'},
+              {id: 8, name: 'peachpuff'},
+              {id: 9, name: 'palegoldenrod'},
+              {id: 10, name: 'khaki'},
+              {id: 11, name: 'darkkhaki'},
+            ]
+          }, {
+            name: 'purple',
+            items: [
+              {id: 1, name: 'lavender'},
+              {id: 2, name: 'thistle'},
+              {id: 3, name: 'plum'},
+              {id: 4, name: 'violet'},
+              {id: 5, name: 'orchid'},
+              {id: 6, name: 'fuchsia'},
+              {id: 7, name: 'magenta'},
+              {id: 8, name: 'mediumorchid'},
+              {id: 9, name: 'mediumpurple'},
+              {id: 10, name: 'rebeccapurple'},
+              {id: 11, name: 'blueviolet'},
+              {id: 12, name: 'darkviolet'},
+              {id: 13, name: 'darkorchid'},
+              {id: 14, name: 'darkmagenta'},
+              {id: 15, name: 'purple'},
+              {id: 16, name: 'indigo'},
+              {id: 17, name: 'slateblue'},
+              {id: 18, name: 'darkslateblue'},
+              {id: 19, name: 'mediumslateblue'},
+            ]
+          },  {
+            name: 'green',
+            items: [
+              {id: 1, name: 'greenyellow'},
+              {id: 2, name: 'chartreuse'},
+              {id: 3, name: 'lawngreen'},
+              {id: 4, name: 'lime'},
+              {id: 5, name: 'limegreen'},
+              {id: 6, name: 'palegreen'},
+              {id: 7, name: 'lightgreen'},
+              {id: 8, name: 'mediumspringgreen'},
+              {id: 9, name: 'springgreen'},
+              {id: 10, name: 'mediumseagreen'},
+              {id: 11, name: 'seagreen'},
+              {id: 12, name: 'forestgreen'},
+              {id: 13, name: 'green'},
+              {id: 14, name: 'darkgreen'},
+              {id: 15, name: 'yellowgreen'},
+              {id: 16, name: 'olivedrab'},
+              {id: 17, name: 'olive'},
+              {id: 18, name: 'darkolivegreen'},
+              {id: 19, name: 'mediumaquamarine'},
+              {id: 20, name: 'darkseagreen'},
+              {id: 21, name: 'lightseagreen'},
+              {id: 22, name: 'darkcyan'},
+              {id: 23, name: 'teal'},
+            ]
+          }, {
+            name: 'blue',
+            items: [
+              {id: 1, name: 'aqua'},
+              {id: 2, name: 'cyan'},
+              {id: 3, name: 'lightcyan'},
+              {id: 4, name: 'paleturquoise'},
+              {id: 5, name: 'aquamarine'},
+              {id: 6, name: 'turquoise'},
+              {id: 7, name: 'mediumturquoise'},
+              {id: 8, name: 'darkturquoise'},
+              {id: 9, name: 'cadetblue'},
+              {id: 10, name: 'steelblue'},
+              {id: 11, name: 'lightsteelblue'},
+              {id: 12, name: 'powderblue'},
+              {id: 13, name: 'lightblue'},
+              {id: 14, name: 'skyblue'},
+              {id: 15, name: 'lightskyblue'},
+              {id: 16, name: 'deepskyblue'},
+              {id: 17, name: 'dodgerblue'},
+              {id: 18, name: 'cornflowerblue'},
+              {id: 19, name: 'mediumslateblue'},
+              {id: 20, name: 'royalblue'},
+              {id: 21, name: 'blue'},
+              {id: 22, name: 'mediumblue'},
+              {id: 23, name: 'darkblue'},
+              {id: 24, name: 'navy'},
+              {id: 25, name: 'midnightblue'},
+            ]
+          }, {
+            name: 'brown',
+            items: [
+              {id: 1, name: 'cornsilk'},
+              {id: 2, name: 'blanchedalmond'},
+              {id: 3, name: 'bisque'},
+              {id: 4, name: 'navajowhite'},
+              {id: 5, name: 'wheat'},
+              {id: 6, name: 'burlywood'},
+              {id: 7, name: 'tan'},
+              {id: 8, name: 'rosybrown'},
+              {id: 9, name: 'sandybrown'},
+              {id: 10, name: 'goldenrod'},
+              {id: 11, name: 'darkgoldenrod'},
+              {id: 12, name: 'peru'},
+              {id: 13, name: 'chocolate'},
+              {id: 14, name: 'saddlebrown'},
+              {id: 15, name: 'sienna'},
+              {id: 16, name: 'brown'},
+              {id: 17, name: 'maroon'},
+            ]
+          }, {
+            name: 'white',
+            items: [
+              {id: 1, name: 'white'},
+              {id: 2, name: 'snow'},
+              {id: 3, name: 'honeydew'},
+              {id: 4, name: 'mintcream'},
+              {id: 5, name: 'azure'},
+              {id: 6, name: 'aliceblue'},
+              {id: 7, name: 'ghostwhite'},
+              {id: 8, name: 'whitesmoke'},
+              {id: 9, name: 'seashell'},
+              {id: 10, name: 'beige'},
+              {id: 11, name: 'oldlace'},
+              {id: 12, name: 'floralwhite'},
+              {id: 13, name: 'ivory'},
+              {id: 14, name: 'antiquewhite'},
+              {id: 15, name: 'linen'},
+              {id: 16, name: 'lavenderblush'},
+              {id: 17, name: 'mistyrose'},
+            ]
+          }, {
+            name: 'gray',
+            items: [
+              {id: 1, name: 'gainsboro'},
+              {id: 2, name: 'lightgray'},
+              {id: 3, name: 'silver'},
+              {id: 4, name: 'darkgray'},
+              {id: 5, name: 'gray'},
+              {id: 6, name: 'dimgray'},
+              {id: 7, name: 'lightslategray'},
+              {id: 8, name: 'slategray'},
+              {id: 9, name: 'darkslategray'},
+              {id: 10, name: 'black'},
+            ]
+          }
         ];
-        $scope.print = function (item) {
-          console.log('selected item', item);
+        $scope.setBackgroundColor = function (item) {
+          $scope.color = item.name;
         };
       });
   </script>
