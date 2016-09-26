@@ -2,6 +2,7 @@
   <div class="overlay-menu--container">
     <div class="overlay-menu--column">
       <div class="overlay-menu--row"
+        ng-class="{'active': item === selected}"
         ng-repeat="item in items"
         ng-click="select(item)">
         <span ng-bind="item.name"></span>
